@@ -1,0 +1,245 @@
+html, body {
+    height: 100%;
+}
+.resume-box {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.resume-left {
+    height: 100%;
+    width: 200px;
+}
+.resume-right {
+    height: 100%;
+    flex: 1;
+    overflow: auto;
+    color: #373a3c;
+    padding-top: 60px;
+}
+.resume-right .container {
+    width: 90%;
+}
+.resume-right h1 {
+    margin: 0;
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 1;
+    font-family: 'Playfair Display', serif;
+}
+.resume-right h2 {
+    margin: 0;
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+.contacts-line {
+    margin: 10px 0;
+}
+.contacts-line .contact-tag {
+    display: block;
+    margin-bottom: 10px;
+}
+.contacts-line .contact-tag .material-icons {
+    margin-right: 5px;
+}
+.resume-right h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #818a91;
+}
+.resume-right h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.resume-right ul {
+    list-style-type: square;
+    list-style-position: inside;
+}
+.resume-right ul > li {
+    list-style-type: square;
+}
+.resume-right p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+.resume-right ul.left-rule {
+    list-style: none;
+    padding-left: 30px;
+    position: relative;
+}
+.resume-right ul.left-rule::before {
+    content: "";
+    width: 2px;
+    position: absolute;
+    left: 6px;
+    top: 0;
+    bottom: 0;
+    background: #373a3c;
+    background: linear-gradient(180deg,rgba(55,58,60,1) 0%, rgba(55,58,60,1) 90%, rgba(55,58,60,0) 100%);
+}
+.resume-right ul.left-rule li {
+    list-style: none;
+    position: relative;
+    margin-bottom: 40px;
+}
+.resume-right ul.left-rule h4 {
+    position: relative;
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    font-size: 2.35rem;
+    line-height: 1.2;
+    font-weight: 500;
+}
+.resume-right ul.left-rule h4::after {
+    content: "";
+    position: absolute;
+    left: -29px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #FFF;
+    border: 2px solid #373a3c;
+}
+.resume-right ul.left-rule span {
+    color: #818a91;
+    letter-spacing: 0.5rem;
+}
+.resume-right ul.left-rule h5 {
+    margin: 0;
+    margin-top: 5px;
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+.resume-right ul.left-rule h6 {
+    margin: 0;
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+
+.resume-left {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.resume-sidebar-links {
+    margin-right: 20px;
+}
+.resume-sidebar-links ul {
+    list-style: none;
+}
+.resume-sidebar-links ul li {
+    position: relative;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.resume-sidebar-links ul li a {
+    color: #FFF;
+}
+.resume-sidebar-links ul li a:hover span {
+    opacity: 1;
+    z-index: 10;
+    background: #000;
+}
+.resume-sidebar-links ul li span {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -20px;
+    background: transparent;
+    padding: 3px 10px;
+    border-radius: 20px;
+    display: block;
+    opacity: 0;
+    transition: all 1s;
+    z-index: -9;
+}
+
+@media print {
+    html, body {
+        height: auto;
+    }
+    .resume-box{
+        display: block;
+    }
+    .col {
+        margin: 0 !important;
+        padding: 0 5px !important;
+    }
+    .resume-left {
+        display: none;
+    }
+    .resume-right {
+        padding-top: 0;
+        page-break-inside: avoid;
+        height: auto;
+        overflow: visible;
+    }
+    .resume-right a {
+        color: #373a3c;
+    }
+    .resume-right .container {
+        width: 100%;
+    }
+    .resume-right h1 {
+        font-size: 2.5rem;
+    }
+    .resume-right h2 {
+        font-size: 1.2rem;
+    }
+    .resume-right h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid #818a91;
+    }
+    .resume-right h4 {
+        font-size: 1.3rem;
+    }
+    .resume-right p {
+        margin: 0;
+        font-size: 1rem;
+    }
+    .resume-right ul.left-rule {
+        padding-left: 10px;
+    }
+    .resume-right ul.left-rule::before {
+        display: none;
+    }
+    .resume-right ul.left-rule h4::after {
+        display: none;
+    }
+    .resume-right ul.left-rule span {
+        letter-spacing: 0.2rem;
+    }
+    .resume-right ul.left-rule h4 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .resume-left {
+        display: none;
+    }
+}
+@media (max-width: 992px) {
+    .resume-left {
+        width: 80px;
+    }
+}

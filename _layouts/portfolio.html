@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700;800&display=swap" />
+    <!-- Local Styles -->
+    <link rel="stylesheet" href="/assets/styles/portfolio.css" />
+</head>
+<body>
+    <header>
+        <h1>Eduardo</h1>
+        <h2>Oliveira</h2>
+    </header>
+    <svg viewBox="0 0 512 50" class="header-bottom-svg">
+        <path d="M 0,0 V 50 L 512,0 Z" />
+    </svg>
+
+    {{ content }}
+
+    <div class="footer-top"></div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-description">
+                <h4>It's small, but open</h4>
+                <p>This page is published with MIT license on my GitHub profile (<a href="https://github.com/EduardoJM/EduardoJM.github.io" target="_blank">Repository</a>).</p>
+            </div>
+            <div class="footer-links">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-credits">
+            <p>Created with <i class="fas fa-heart"></i> by <a href="https://eduardojm.github.io/">Eduardo Oliveira</a>.</p>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/318ab87a29.js" crossorigin="anonymous"></script>
+</body>
+</html>
