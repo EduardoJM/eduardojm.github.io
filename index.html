@@ -1,20 +1,62 @@
 ---
 layout: portfolio
 title: Início
-about_title: Sobre
-about_text1: Graduated in Mathematics by the State University of Goiás with an overall average of 9.2. Completely in love with science and technology and, especially, a computer lover. Studying a little bit of <i>Node</i>, <i>React</i> and <i>React-native</i> for web and mobile development and a little bit of <i>Python</i> and <i>statistical</i> for some personal projects, like understanding the statistical sampling and create vote intention survey in the next elections. And in his spare time, clown for the group Alegria Anápolis.
-about_subtitle1: Acadêmico
-about_text2: In my graduate course i have written my monograph in the introduction of the Variational Calculus and the Rayleigh-Ritz method using some <i>Python</i> scripts for make the calculations. The LaTeX source code (and the scripts) are avaliable in my GitHub profile (<a href="https://github.com/eduardojm/tcc" target="_blank">click here</a> for the repository) and a online version is uploaded <a href="https://eduardojm.github.io/tcc/" target="_blank">here</a> (only in Brazilian Portuguese).
-about_subtitle2: Atualmente
-about_text3: Professionally, I'm looking for new opportunities in the programming area. A curriculum can be found by <a href="/curriculo/" target="_blank">clicking here</a> (only in Brazilian Portuguese, for now).
-contact_title: Contato
-contact_sendme: Me envie uma mensagem
-contact_frm_name: Nome
-contact_frm_name_pc1: Digite seu nome...
-contact_frm_name_pc2: Digite seu sobrenome...
-contact_frm_mail: E-mail
-contact_frm_mail_pc: Digite seu e-mail...
-contact_frm_mail_alert: <span>Note: </span>insert a valid e-mail to receive a response.
 ---
+
+{% capture about_title %}
+Sobre
+{% endcapture %}
+
+{% capture about_text1 %}
+Graduated in Mathematics by the State University of Goiás with an overall average of 9.2. Completely in love with science and technology and, especially, a computer lover. Studying a little bit of <i>Node</i>, <i>React</i> and <i>React-native</i> for web and mobile development and a little bit of <i>Python</i> and <i>statistical</i> for some personal projects, like understanding the statistical sampling and create vote intention survey in the next elections. And in his spare time, clown for the group Alegria Anápolis.
+{% endcapture %}
+
+{% capture about_subtitle1 %}
+Acadêmico
+{% endcapture %}
+
+{% capture about_text2 %}
+In my graduate course i have written my monograph in the introduction of the Variational Calculus and the Rayleigh-Ritz method using some <i>Python</i> scripts for make the calculations. The LaTeX source code (and the scripts) are avaliable in my GitHub profile (<a href="https://github.com/eduardojm/tcc" target="_blank">click here</a> for the repository) and a online version is uploaded <a href="https://eduardojm.github.io/tcc/" target="_blank">here</a> (only in Brazilian Portuguese).
+{% endcapture %}
+
+{% capture about_subtitle2 %}
+Atualmente
+{% endcapture %}
+
+{% capture about_text3 %}
+Professionally, I'm looking for new opportunities in the programming area. A curriculum can be found by <a href="/curriculo/" target="_blank">clicking here</a> (only in Brazilian Portuguese, for now).
+{% endcapture %}
+
+{% capture contact_title %}
+Contato
+{% endcapture %}
+
+{% capture contact_sendme %}
+Me envie uma mensagem
+{% endcapture %}
+
+{% capture contact_frm_name %}
+Nome
+{% endcapture %}
+
+{% capture contact_frm_name_pc1 %}
+Digite seu nome...
+{% endcapture %}
+
+{% capture contact_frm_name_pc2 %}
+Digite seu sobrenome...
+{% endcapture %}
+
+{% capture contact_frm_mail %}
+E-mail
+{% endcapture %}
+
+{% capture contact_frm_mail_pc %}
+Digite seu e-mail...
+{% endcapture %}
+
+{% capture contact_frm_mail_alert %}
+<span>Note: </span>insert a valid e-mail to receive a response.
+{% endcapture %}
 
 {% include home.html %}
