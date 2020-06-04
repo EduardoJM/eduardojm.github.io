@@ -1,20 +1,20 @@
 <div class="content">
-    <h3>About</h3>
+    <h3>{{ page.about_title }}</h3>
 
     <div class="about-block">
         <div class="about-avatar">
             <img src="/assets/images/edu/palhaco.jpg" class="avatar" />
         </div>
         <div class="about-text">
-            <p>Graduated in Mathematics by the State University of Goiás with an overall average of 9.2. Completely in love with science and technology and, especially, a computer lover. Studying a little bit of <i>Node</i>, <i>React</i> and <i>React-native</i> for web and mobile development and a little bit of <i>Python</i> and <i>statistical</i> for some personal projects, like understanding the statistical sampling and create vote intention survey in the next elections. And in his spare time, clown for the group Alegria Anápolis.</p>
-            <h4>Academic</h4>
-            <p>In my graduate course i have written my monograph in the introduction of the Variational Calculus and the Rayleigh-Ritz method using some <i>Python</i> scripts for make the calculations. The LaTeX source code (and the scripts) are avaliable in my GitHub profile (<a href="https://github.com/eduardojm/tcc" target="_blank">click here</a> for the repository) and a online version is uploaded <a href="https://eduardojm.github.io/tcc/" target="_blank">here</a> (only in Brazilian Portuguese).</p>
-            <h4>Presently</h4>
-            <p>Professionally, I'm looking for new opportunities in the programming area. A curriculum can be found by <a href="/curriculo/" target="_blank">clicking here</a> (only in Brazilian Portuguese, for now).</p>
+            <p>{{ page.about_text1 }}</p>
+            <h4>{{ page.about_subtitle1 }}</h4>
+            <p>{{ page.about_text2 }}</p>
+            <h4>{{ page.about_subtitle2 }}</h4>
+            <p>{{ page.about_text3 }}</p>
         </div>
     </div>
 
-    <h3 id="contact">Contact</h3>
+    <h3 id="contact">{{ page.contact_title }}</h3>
 </div>
 
 <div class="contact-block">
@@ -23,22 +23,22 @@
     </svg>
     <div class="contact-box">
         <div class="mail">
-            <h4>Send me a message</h4>
+            <h4>{{ page.contact_sendme }}</h4>
             <form target="blank" action="https://submit.jotform.com/submit/193524322711047/" method="post" accept-charset="utf-8">
                 <input type="hidden" name="formID" value="193524322711047" />
                 <input type="hidden" id="JWTContainer" value="" />
                 <input type="hidden" id="cardinalOrderNumber" value="" />
                 <div class="form-line">
-                    <label for="name">Name:</label>
+                    <label for="name">{{ page.contact_frm_name }}:</label>
                     <div class="form-inline">
-                        <input name="q3_nome[first]" class="validate" id="name" type="text" placeholder="Type your name..." />
-                        <input name="q3_nome[last]" id="lastname" type="text" placeholder="Type your second name..." />
+                        <input name="q3_nome[first]" class="validate" id="name" type="text" placeholder="{{ page.contact_frm_name_pc1 }}" />
+                        <input name="q3_nome[last]" id="lastname" type="text" placeholder="{{ page.contact_frm_name_pc2 }}" />
                     </div>
                 </div>
                 <div class="form-line">
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="q4_email" placeholder="Type your e-mail..." />
-                    <p><span>Note: </span>insert a valid e-mail to receive a response.</p>
+                    <label for="email">{{ page.contact_frm_mail }}:</label>
+                    <input type="email" id="email" name="q4_email" placeholder="{{ page.contact_frm_mail_pc }}" />
+                    <p>{{ page.contact_frm_mail_alert }}</p>
                 </div>
                 <div class="form-line">
                     <label for="message">Message:</label>
