@@ -30,8 +30,8 @@
             <div class="footer-links">
                 <h4>Links</h4>
                 <ul>
-                    <li><a href="/{{ link_part }}index.html">{{ page.footer_link_home }}</a></li>
-                    <li><a href="/{{ link_part }}index.html#contact">{{ page.footer_link_contact }}</a></li>
+                    <li><a href="/{% if page.link_part %}{{ page.link_part }}{% endif %}index.html">{{ page.footer_link_home }}</a></li>
+                    <li><a href="/{% if page.link_part %}{{ page.link_part }}{% endif %}index.html#contact">{{ page.footer_link_contact }}</a></li>
                 </ul>
             </div>
         </div>
