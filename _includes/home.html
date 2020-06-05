@@ -41,8 +41,8 @@
                     <p>{{ contact_frm_mail_alert }}</p>
                 </div>
                 <div class="form-line">
-                    <label for="message">Message:</label>
-                    <textarea name="q5_digiteUma" id="message" placeholder="Type your message..."></textarea>
+                    <label for="message">{{ contact_frm_message }}:</label>
+                    <textarea name="q5_digiteUma" id="message" placeholder="{{ contact_frm_message_pc }}"></textarea>
                 </div>
                 <div style="display: none;">
                     <input type="hidden" name="website" value="" />
@@ -52,7 +52,7 @@
                     document.getElementById("si" + "mple" + "_spc").value = "193524322711047-193524322711047";
                 </script>
                 <div class="form-line submit">
-                    <button type="submit">Send</button>
+                    <button type="submit">{{ contact_frm_send }}</button>
                 </div>
                 <div class="form-line jotform">
                     <span>Powered by <a href="https://www.jotform.com/" target="_blank">JotForm</a>.</span>
@@ -60,7 +60,7 @@
             </form>
         </div>
         <div class="social">
-            <h4>Find me on social media</h4>
+            <h4>{{ contact_on_social }}</h4>
             <div class="avatar-area">
                 <img class="avatar" src="/assets/images/edu/avatar.jpg" />
             </div>
@@ -98,9 +98,9 @@
     <div class="covered-item">
         <div class="thumb" style="background-image: url(/assets/images/web/cover.jpg);"></div>
         <div class="overlay">
-            <h3>Web Development</h3>
-            <h4>Web projects developed by me.</h4>
-            <a href="/works/web.html">See Projects</a>
+            <h3>{{ projects_web_title }}</h3>
+            <h4>{{ projects_web_subtitle }}</h4>
+            <a href="/{{ link_part }}works/web.html">{{ projects_web_see }}</a>
         </div>
     </div>
 

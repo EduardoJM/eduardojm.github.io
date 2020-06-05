@@ -1,0 +1,79 @@
+<div class="content">
+    <h3 id="web">{{ text_heading }}</h3>
+
+    <h4 style="margin-top: 50px;">{{ text_toc_title }}</h4>
+    <ul class="toc">
+        <li>
+            <a href="#static">{{ text_toc_1 }}</a>
+        </li>
+        <li>
+            <a href="#svelte">{{ text_toc_2 }}</a>
+        </li>
+        <li>
+            <a href="#react">{{ text_toc_3 }}</a>
+        </li>
+    </ul>
+
+    <h4 id="static">{{ text_toc_1 }}</h4>
+    
+    <div class="item">
+        <div class="thumb" style="background-image: url(/assets/images/web/01_spc.jpg)"></div>
+        <div class="item-content">
+            <h4>{{ project_1_title }}</h4>
+            <p>{{ project_1_desc }}</p>
+            <div class="fill"></div>
+            <div class="links-line">
+                <a class="btn gh-link" target="_blank" href="https://github.com/EduardoJM/single-price-grid-component">GitHub</a>
+                <a class="btn demo-link" target="_blank" href="https://eduardojm.github.io/single-price-grid-component/">Online</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="item">
+        <div class="thumb" style="background-image: url(/assets/images/web/02_landing.jpg)"></div>
+        <div class="item-content">
+            <h4>{{ project_2_title }}</h4>
+            <p>{{ project_2_desc }}</p>
+            <div class="fill"></div>
+            <div class="links-line">
+                <a class="btn gh-link" target="_blank" href="https://github.com/EduardoJM/simple-landing-page">GitHub</a>
+                <a class="btn demo-link" target="_blank" href="https://eduardojm.github.io/simple-landing-page/">Online</a>
+            </div>
+        </div>
+    </div>
+
+    <h4 id="svelte">{{ text_toc_2 }}</h4>
+    
+    <div class="item">
+        <div class="thumb" style="background-image: url(/assets/images/web/03_todo.jpg)"></div>
+        <div class="item-content">
+            <h4>{{ project_3_title }}</h4>
+            <p>{{ project_3_desc }}</p>
+            <div class="fill"></div>
+            <div class="links-line">
+                <a class="btn gh-link" target="_blank" href="https://github.com/EduardoJM/svelte-to-do-app">GitHub</a>
+                <a class="btn demo-link" target="_blank" href="https://eduardojm.github.io/svelte-to-do-app/">Online</a>
+            </div>
+        </div>
+    </div>
+
+    <h4 id="react">{{ text_toc_3 }}</h4>
+
+    <div class="item">
+        <div class="thumb" style="background-image: url(/assets/images/web/04_apollo.jpg)"></div>
+        <div class="item-content">
+            <h4>{{ project_4_title }}</h4>
+            <p>{{ project_4_desc }}</p>
+            <div class="fill"></div>
+            <div class="links-line">
+                <a class="btn gh-link" target="_blank" href="https://github.com/EduardoJM/apollo-gallery-scrap">Scraper (GitHub)</a>
+                <a class="btn gh-link" target="_blank" href="https://github.com/EduardoJM/apollo-gallery">GitHub</a>
+                <a class="btn demo-link" target="_blank" href="https://eduardojm.github.io/apollo-gallery/#/">Online</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="back-row">
+        <a href="/{{ link_part }}index.html" class="btn btn-back">{{ back_link }}</a>
+    </div>
+</div>

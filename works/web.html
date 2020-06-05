@@ -1,84 +1,32 @@
 ---
 layout: portfolio
-title: Web Development
+title: Desenvolvimento Web
 ---
 
-<div class="content">
-    <h3 id="web">Web Development</h3>
+{% capture text_heading %}Desenvolvimento Web{% endcapture %}
 
-    <h4 style="margin-top: 50px;">Contents</h4>
-    <ul class="toc">
-        <li>
-            <a href="#static">Static HTML and CSS Pages</a>
-        </li>
-        <li>
-            <a href="#svelte">Pages Created With Svelte</a>
-        </li>
-        <li>
-            <a href="#react">Pages Created With React</a>
-        </li>
-    </ul>
+{% capture text_toc_title %}Conteúdos{% endcapture %}
 
-    <h4 id="static">Static HTML and CSS Pages</h4>
-    
-    <div class="item">
-        <div class="thumb" style="background-image: url(/assets/images/web/01_spc.jpg)"></div>
-        <div class="item-content">
-            <h4>Single Price Component</h4>
-            <p>An small single price display component created for training construction of pages using HTML and CSS.</p>
-            <div class="fill"></div>
-            <div class="links-line">
-                <a class="btn gh-link" target="_blank" href="https://github.com/EduardoJM/single-price-grid-component">GitHub</a>
-                <a class="btn demo-link" target="_blank" href="https://eduardojm.github.io/single-price-grid-component/">Online</a>
-            </div>
-        </div>
-    </div>
-    
-    <div class="item">
-        <div class="thumb" style="background-image: url(/assets/images/web/02_landing.jpg)"></div>
-        <div class="item-content">
-            <h4>Simple Landing Page</h4>
-            <p>An small landing page created for training construction of pages using HTML and CSS.</p>
-            <div class="fill"></div>
-            <div class="links-line">
-                <a class="btn gh-link" target="_blank" href="https://github.com/EduardoJM/simple-landing-page">GitHub</a>
-                <a class="btn demo-link" target="_blank" href="https://eduardojm.github.io/simple-landing-page/">Online</a>
-            </div>
-        </div>
-    </div>
+{% capture text_toc_1 %}Páginas estáticas feitas com HTML e CSS{% endcapture %}
 
-    <h4 id="svelte">Pages Created With Svelte</h4>
-    
-    <div class="item">
-        <div class="thumb" style="background-image: url(/assets/images/web/03_todo.jpg)"></div>
-        <div class="item-content">
-            <h4>To-Do Application</h4>
-            <p>An small to-do application (front-end only) created for first study of Svelte js framework. This page was created because i'm studying the first steps of various frameworks because, if in the future i need to use this, is more simple.</p>
-            <div class="fill"></div>
-            <div class="links-line">
-                <a class="btn gh-link" target="_blank" href="https://github.com/EduardoJM/svelte-to-do-app">GitHub</a>
-                <a class="btn demo-link" target="_blank" href="https://eduardojm.github.io/svelte-to-do-app/">Online</a>
-            </div>
-        </div>
-    </div>
+{% capture text_toc_2 %}Páginas criadas com o Svelte{% endcapture %}
 
-    <h4 id="react">Pages Created With React</h4>
+{% capture text_toc_3 %}Páginas criadas com o React{% endcapture %}
 
-    <div class="item">
-        <div class="thumb" style="background-image: url(/assets/images/web/04_apollo.jpg)"></div>
-        <div class="item-content">
-            <h4>Apollo Image Gallery</h4>
-            <p>An project created for an little bit modern graphics user interface for the NASA apollo program images. The images data are scraped from original apollo archive sites (with scraper in Python). The scraper is, currently, not completely automatic and need some revisions.</p>
-            <div class="fill"></div>
-            <div class="links-line">
-                <a class="btn gh-link" target="_blank" href="https://github.com/EduardoJM/apollo-gallery-scrap">Scraper (GitHub)</a>
-                <a class="btn gh-link" target="_blank" href="https://github.com/EduardoJM/apollo-gallery">GitHub</a>
-                <a class="btn demo-link" target="_blank" href="https://eduardojm.github.io/apollo-gallery/#/">Online</a>
-            </div>
-        </div>
-    </div>
+{% capture project_1_title %}Componente para preço único{% endcapture %}
+{% capture project_1_desc %}Pequeno componente para exibição preço único criado para treinar e revisar técnicas para a construção de páginas usando HTML e CSS.{% endcapture %}
 
-    <div class="back-row">
-        <a href="/index.html" class="btn btn-back">Back</a>
-    </div>
-</div>
+{% capture project_2_title %}LandingPage Simples{% endcapture %}
+{% capture project_2_desc %}Uma pequena landing page criada para treinar e revisar técnicas para a construção de páginas com HTML e CSS.{% endcapture %}
+
+{% capture project_3_title %}Aplicativo de To-Do{% endcapture %}
+{% capture project_3_desc %}Um pequeno aplicativo para To-Do (apenas o front-end, sem conexão com bancos de dados e etc.) criado para um primeiro estudo sobre o framework de javascript Svelte. Essa página foi criada pois tenho estudado os primeiros passos para iniciar o desenvolvimento com alguns dos frameworks mais famosos para, caso necessário desenvolver nos mesmos, será mais fácil o início.{% endcapture %}
+
+{% capture project_4_title %}Galeria de Imagens Apollo{% endcapture %}
+{% capture project_4_desc %}Projeto criado para dar uma interface gráfica de usuário um pouco mais moderna para a exibição das imagens do programa Apollo da NASA. Os dados das imagens foram raspados do site apollo archive (com o raspador feito em Python). O raspador, atualmente, não é completamente autônomo e precisa de algumas revisões.{% endcapture %}
+
+{% capture back_link %}Voltar{% endcapture %}
+
+{% capture link_part %}{% endcapture %}
+
+{% include web.html %}
