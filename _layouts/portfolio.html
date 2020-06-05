@@ -32,6 +32,11 @@
                 <ul>
                     <li><a href="/{% if page.link_part %}{{ page.link_part }}{% endif %}index.html">{{ page.footer_link_home }}</a></li>
                     <li><a href="/{% if page.link_part %}{{ page.link_part }}{% endif %}index.html#contact">{{ page.footer_link_contact }}</a></li>
+                    {% if page.lang == "en" %}
+                        <li><a href="/index.html">Versão em Português</a></li>
+                    {% else %}
+                        <li><a href="/en/index.html">Version in English</a></li>
+                    {% endif %}
                 </ul>
             </div>
         </div>
