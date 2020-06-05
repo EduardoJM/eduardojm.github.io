@@ -24,29 +24,19 @@
     <footer>
         <div class="footer-content">
             <div class="footer-description">
-                <h4>{% if footer_small %}{{ footer_small }}{% else %}It's small, but open{% endif %}</h4>
-                <p>
-                    {% if footer_gh %}
-                        {{ footer_gh }}
-                    {% else %}
-                        This page is published with MIT license on my GitHub profile (<a href="https://github.com/EduardoJM/EduardoJM.github.io" target="_blank">Repository</a>).
-                    {% endif %}
-                </p>
+                <h4>{{ page.footer_small }}</h4>
+                <p>{{ page.footer_gh }} (<a href="https://github.com/EduardoJM/EduardoJM.github.io" target="_blank">{{ page.footer_gh_repo }}</a>).</p>
             </div>
             <div class="footer-links">
                 <h4>Links</h4>
                 <ul>
-                    <li><a href="/{{ link_part }}index.html">{% if footer_link_home %}{{ footer_link_home }}{% else %}Home{% endif %}</a></li>
-                    <li><a href="/{{ link_part }}index.html#contact">{% if footer_link_contact %}{{ footer_link_contact }}{% else %}Conctact{% endif %}</a></li>
+                    <li><a href="/{{ link_part }}index.html">{{ page.footer_link_home }}</a></li>
+                    <li><a href="/{{ link_part }}index.html#contact">{{ page.footer_link_contact }}</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-credits">
-            {% if footer_credits %}
-                {{ footer_credits }}
-            {% else %}
-                <p>Created with <i class="fas fa-heart"></i> by <a href="https://eduardojm.github.io/">Eduardo Oliveira</a>.</p>
-            {% endif %}
+            <p>{{ page.footer_created }} <i class="fas fa-heart"></i> {{ page.footer_by }} <a href="https://eduardojm.github.io/">Eduardo Oliveira</a>.</p>
         </div>
     </footer>
 
