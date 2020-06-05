@@ -429,6 +429,16 @@ svg.header-bottom-svg {
     background: #555;
     color: #FFF;
 }
+.content a.btn.youtube-link {
+    border: 1px solid #ff0000;
+    color:#ff0000;
+    border-radius: 5px;
+    transition: 0.5s ease;
+}
+.content a.btn.youtube-link:hover {
+    background: #ff0000;
+    color: #FFF;
+}
 .content a.btn.btn-back {
     background: #1565c0;
     color: #FFF;
