@@ -103,28 +103,76 @@
 </div>
 
 <div class="content">
-    <div class="covered-item">
-        <div class="thumb" style="background-image: url(/assets/images/web/cover.jpg);"></div>
-        <div class="overlay">
-            <h3>{{ projects_web_title }}</h3>
-            <h4>{{ projects_web_subtitle }}</h4>
-            <a href="/{{ link_part }}works/web.html">{{ projects_web_see }}</a>
+    
+    <h3 id="projects">{{ proj_dev }}</h3>
+
+    <h4 id="projects-fullstack">{{ proj_fullstack }}</h4>
+    
+    <div class="card-list">
+        <div class="card">
+            <div class="card-image" style="background: url({{ proj_p1_background }})"></div>
+            <div class="card-content">
+                <h2 class="card-title">{{ proj_p1_title }}</h2>
+                <p class="card-body">{{ proj_p1_desc }}</p>
+            </div>
+            <div class="card-footer">
+                <a href="https://github.com/EduardoJM/Ecoleta" target="_blank" class="card-link">GitHub</a>
+            </div>
         </div>
     </div>
 
-    <div class="covered-item">
-        <div class="thumb" style="background-image: url(/assets/images/mobile/cover.jpg);"></div>
-        <div class="overlay">
-            <h3>{{ projects_mobile_title }}</h3>
-            <h4>{{ projects_mobile_subtitle }}</h4>
-            <a href="/{{ link_part }}works/mobile.html">{{ projects_mobile_see }}</a>
+    <h4 id="projects-web-front">{{ proj_web }}</h4>
+
+    <div class="card-list">
+        <div class="card">
+            <div class="card-image" style="background: url({{ proj_p2_background }})"></div>
+            <div class="card-content">
+                <h2 class="card-title">{{ proj_p2_title }}</h2>
+                <p class="card-body">{{ proj_p2_desc }}</p>
+            </div>
+            <div class="card-footer">
+                <a href="https://eduardojm.github.io/apollo-gallery/#/" target="_blank" class="card-link">Online</a>
+                <a href="https://github.com/EduardoJM/apollo-gallery-scrap" target="_blank" class="card-link">Scraper (GitHub)</a>
+                <a href="https://github.com/EduardoJM/apollo-gallery" target="_blank" class="card-link">GitHub</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image" style="background: url({{ proj_p3_background }})"></div>
+            <div class="card-content">
+                <h2 class="card-title">{{ proj_p3_title }}</h2>
+                <p class="card-body">{{ proj_p3_desc }}</p>
+            </div>
+            <div class="card-footer">
+                <a href="https://eduardojm.github.io/Image-Comparer/" target="_blank" class="card-link">Online</a>
+                <a href="https://github.com/EduardoJM/Image-Comparer" target="_blank" class="card-link">GitHub</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image" style="background: url({{ proj_p4_background }})"></div>
+            <div class="card-content">
+                <h2 class="card-title">{{ proj_p4_title }}</h2>
+                <p class="card-body">{{ proj_p4_desc }}</p>
+            </div>
+            <div class="card-footer">
+                <a href="https://eduardojm.github.io/LibreICONS-remote" target="_blank" class="card-link">Online</a>
+                <a href="https://github.com/EduardoJM/LibreICONS-remote" target="_blank" class="card-link">GitHub</a>
+            </div>
         </div>
     </div>
 
-    <!--
-    <h3 id="desktop">Desktop Apps Development</h3>
-    <h3 id="mobile">Mobile Apps Development</h3>
-    -->
-    <h3 style="margin-top: 50px; margin-bottom: 50px;">{{ deving_title }}</h3>
+    <h4 id="projects-desktop">{{ proj_desk }}</h4>
+
+    <div class="card-list">
+        <div class="card">
+            <div class="card-image" style="background: url({{ proj_p5_background }})"></div>
+            <div class="card-content">
+                <h2 class="card-title">{{ proj_p5_title }}</h2>
+                <p class="card-body">{{ proj_p5_desc }}</p>
+            </div>
+            <div class="card-footer">
+                <a href="https://github.com/EduardoJM/year-in-pixel" target="_blank" class="card-link">GitHub</a>
+            </div>
+        </div>
+    </div>
 
 </div>
